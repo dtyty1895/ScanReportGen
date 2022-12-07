@@ -1,0 +1,20 @@
+# 一般設定
+[GENERAL]
+
+# 一般字體大小
+NormalFontSize = 14
+
+# 中文字體名稱
+FontChinese = 微軟正黑體
+
+# 英文字體名稱
+FontEnglish = Arial
+
+# 風險項目名稱標題的字體大小
+RiskTitleFontSize = 16
+
+# 表格字體造型
+TableStyle = List Table 3 Accent 1
+
+# 段落字體造型
+ParagStyle = List Paragraph

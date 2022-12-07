@@ -1,0 +1,11 @@
+local variable 'tmp' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Company\SystexWebScanReportGen\webscan_gen.py", line 880, in silent_generate_report
+    generate_report(dev_pdf, owa_pdf, doc_file, xls_file, save_path, **kwargs)
+  File "D:\Company\SystexWebScanReportGen\webscan_gen.py", line 818, in generate_report
+    owa_list = owasp_list(owa_pdf, owa_cnt, risk_list)
+  File "D:\Company\SystexWebScanReportGen\webscan_gen.py", line 435, in owasp_list
+    log_debug("tmp list: ",tmp)
+UnboundLocalError: local variable 'tmp' referenced before assignment
+
+// 你以為是 Bug，但其實是我 DIO 噠！

@@ -1,0 +1,15 @@
+row index [4] out of range
+Traceback (most recent call last):
+  File "C:\Users\dtyty\桌面\SystexWebScanReportGen\SystexWebScanReportGen\webscan_ppt.py", line 62, in silent_generate_ppt_report
+    generate_ppt_report(save_path,ppt_name, excel)
+  File "C:\Users\dtyty\桌面\SystexWebScanReportGen\SystexWebScanReportGen\webscan_ppt.py", line 53, in generate_ppt_report
+    chg_table(ppt, excel)
+  File "C:\Users\dtyty\桌面\SystexWebScanReportGen\SystexWebScanReportGen\webscan_ppt.py", line 308, in chg_table
+    solvproposal(i+_G.slide_add, ppt, excel )
+  File "C:\Users\dtyty\桌面\SystexWebScanReportGen\SystexWebScanReportGen\webscan_ppt.py", line 473, in solvproposal
+    table.rows[4].height = Cm(0.5)
+  File "D:\Python\Python38\lib\site-packages\pptx\table.py", line 508, in __getitem__
+    raise IndexError(msg)
+IndexError: row index [4] out of range
+
+// 你以為是 Bug，但其實是我 DIO 噠！

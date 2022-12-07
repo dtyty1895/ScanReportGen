@@ -1,0 +1,11 @@
+cell() missing 1 required positional argument: 'col_idx'
+Traceback (most recent call last):
+  File "D:\SystexWebScanReportGen\webscan_gen.py", line 872, in silent_generate_report
+    generate_report(dev_pdf, owa_pdf, doc_file, xls_file, save_path, **kwargs)
+  File "D:\SystexWebScanReportGen\webscan_gen.py", line 842, in generate_report
+    version_information(doc, **kwargs)
+  File "D:\SystexWebScanReportGen\webscan_gen.py", line 887, in version_information
+    # table.cell(1.1).text = kwargs.get('company_name', _G.RepCompanyName)+"股份有限公司_網站弱點掃描"
+TypeError: cell() missing 1 required positional argument: 'col_idx'
+
+// 蛤?

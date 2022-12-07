@@ -1,0 +1,11 @@
+empty separator
+Traceback (most recent call last):
+  File "D:\Company\SystexWebScanReportGen\webscan_gen.py", line 880, in silent_generate_report
+    generate_report(dev_pdf, owa_pdf, doc_file, xls_file, save_path, **kwargs)
+  File "D:\Company\SystexWebScanReportGen\webscan_gen.py", line 804, in generate_report
+    risk_ranges = scan_risk_range(dev_pdf, risk_cnts, risk_list)
+  File "D:\Company\SystexWebScanReportGen\webscan_gen.py", line 249, in scan_risk_range
+    url = line.split(_G.Hostname)[-1].split()[0]
+ValueError: empty separator
+
+// µð?

@@ -1,0 +1,11 @@
+local variable 'table' referenced before assignment
+Traceback (most recent call last):
+  File "D:\SystexWebScanReportGen\webscan_gen.py", line 872, in silent_generate_report
+    generate_report(dev_pdf, owa_pdf, doc_file, xls_file, save_path, **kwargs)
+  File "D:\SystexWebScanReportGen\webscan_gen.py", line 779, in generate_report
+    version_information(doc, kwargs.get('company_name', _G.RepCompanyName), kwargs.get('date', _G.Repdate))
+  File "D:\SystexWebScanReportGen\webscan_gen.py", line 880, in version_information
+    cur_table.move_table_after(table, p)
+UnboundLocalError: local variable 'table' referenced before assignment
+
+// 以前只有我和上帝知道我的程式在寫啥，現在只有神知道了

@@ -1,0 +1,11 @@
+'cp950' codec can't encode character '\xc3' in position 20: illegal multibyte sequence
+Traceback (most recent call last):
+  File "D:\programming\python\SystexWebScanReportGen\webscan_gen.py", line 854, in silent_generate_report
+    generate_report(dev_pdf, owa_pdf, doc_file, xls_file, save_path, **kwargs)
+  File "D:\programming\python\SystexWebScanReportGen\webscan_gen.py", line 796, in generate_report
+    owa_list = owasp_list(owa_pdf, owa_cnt, risk_list)
+  File "D:\programming\python\SystexWebScanReportGen\webscan_gen.py", line 397, in owasp_list
+    file.write(f"{word['size']} {word}\n")
+UnicodeEncodeError: 'cp950' codec can't encode character '\xc3' in position 20: illegal multibyte sequence
+
+// µð?

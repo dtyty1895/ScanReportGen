@@ -1,0 +1,23 @@
+"no style with name ''"
+Traceback (most recent call last):
+  File "D:\SystexWebScanReportGen\webscan_gen.py", line 870, in silent_generate_report
+    generate_report(dev_pdf, owa_pdf, doc_file, xls_file, save_path, **kwargs)
+  File "D:\SystexWebScanReportGen\webscan_gen.py", line 819, in generate_report
+    doc_measurement_range(doc, df, url, dev_pdf)
+  File "D:\SystexWebScanReportGen\webscan_gen.py", line 476, in doc_measurement_range
+    table = doc.add_table(2, 3, style=_G.DocTableStyle)
+  File "D:\Python\Python38\lib\site-packages\docx\document.py", line 93, in add_table
+    table.style = style
+  File "D:\Python\Python38\lib\site-packages\docx\table.py", line 133, in style
+    style_id = self.part.get_style_id(
+  File "D:\Python\Python38\lib\site-packages\docx\parts\document.py", line 78, in get_style_id
+    return self.styles.get_style_id(style_or_name, style_type)
+  File "D:\Python\Python38\lib\site-packages\docx\styles\styles.py", line 109, in get_style_id
+    return self._get_style_id_from_name(style_or_name, style_type)
+  File "D:\Python\Python38\lib\site-packages\docx\styles\styles.py", line 139, in _get_style_id_from_name
+    return self._get_style_id_from_style(self[style_name], style_type)
+  File "D:\Python\Python38\lib\site-packages\docx\styles\styles.py", line 53, in __getitem__
+    raise KeyError("no style with name '%s'" % key)
+KeyError: "no style with name ''"
+
+// 以前只有我和上帝知道我的程式在寫啥，現在只有神知道了

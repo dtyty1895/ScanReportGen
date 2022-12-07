@@ -1,0 +1,14 @@
+"no style with name ''"
+Traceback (most recent call last):
+  File "webscan_gen.py", line 881, in silent_generate_report
+  File "webscan_gen.py", line 826, in generate_report
+  File "webscan_gen.py", line 481, in doc_measurement_range
+  File "docx\document.py", line 93, in add_table
+  File "docx\table.py", line 133, in style
+  File "docx\parts\document.py", line 78, in get_style_id
+  File "docx\styles\styles.py", line 109, in get_style_id
+  File "docx\styles\styles.py", line 139, in _get_style_id_from_name
+  File "docx\styles\styles.py", line 53, in __getitem__
+KeyError: "no style with name ''"
+
+// This is fine.

@@ -1,0 +1,162 @@
+import sys
+import os
+from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtGui import QFontDatabase
+from PyQt5.QtWidgets import QWidget, QMainWindow, QApplication
+from PyQt5.QtWidgets import QFileDialog, QMessageBox, QCheckBox
+import _G
+
+
+class Ui_WebScanGen(object):
+    def setupUi(self, WebScanGen):
+        WebScanGen.setObjectName("WebScanGen")
+        WebScanGen.resize(640, 500)
+        WebScanGen.setMinimumSize(QtCore.QSize(640, 500))
+        
+        self.setWindowTitle(f"{_G.WindowTitle} {_G.Version}")
+        self.verticalLayout = QtWidgets.QVBoxLayout(WebScanGen)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.horizontalLayout_5 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_5.setObjectName("horizontalLayout_5")
+        self.label = QtWidgets.QLabel(WebScanGen)
+        self.label.setObjectName("label")
+        self.horizontalLayout_5.addWidget(self.label)
+        self.Dev_in = QtWidgets.QLineEdit(WebScanGen)
+        self.Dev_in.setObjectName("Dev_in")
+        self.horizontalLayout_5.addWidget(self.Dev_in)
+        self.Dev_btn = QtWidgets.QPushButton(WebScanGen)
+        self.Dev_btn.setObjectName("Dev_btn")
+        self.horizontalLayout_5.addWidget(self.Dev_btn)
+        self.verticalLayout.addLayout(self.horizontalLayout_5)
+        
+          
+        self.horizontalLayout_7 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_7.setObjectName("horizontalLayout_7")
+        self.label_2 = QtWidgets.QLabel(WebScanGen)
+        self.label_2.setObjectName("label_2")
+        self.horizontalLayout_7.addWidget(self.label_2)
+        self.Owa_in = QtWidgets.QLineEdit(WebScanGen)
+        self.Owa_in.setObjectName("Owa_in")
+        self.horizontalLayout_7.addWidget(self.Owa_in)
+        self.Owa_btn = QtWidgets.QPushButton(WebScanGen)
+        self.Owa_btn.setObjectName("Owa_btn")
+        self.horizontalLayout_7.addWidget(self.Owa_btn)
+        self.verticalLayout.addLayout(self.horizontalLayout_7)
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.Excel = QtWidgets.QLabel(WebScanGen)
+        self.Excel.setObjectName("Excel")
+        self.horizontalLayout.addWidget(self.Excel)
+        self.Excel_in = QtWidgets.QLineEdit(WebScanGen)
+        self.Excel_in.setObjectName("Excel_in")
+        self.horizontalLayout.addWidget(self.Excel_in)
+        self.Excel_btn = QtWidgets.QPushButton(WebScanGen)
+        self.Excel_btn.setMinimumSize(QtCore.QSize(100, 0))
+        self.Excel_btn.setObjectName("Excel_btn")
+        self.horizontalLayout.addWidget(self.Excel_btn)
+        self.verticalLayout.addLayout(self.horizontalLayout)
+            
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.Word = QtWidgets.QLabel(WebScanGen)
+        self.Word.setObjectName("Word")
+        self.horizontalLayout_2.addWidget(self.Word)
+        self.Word_in = QtWidgets.QLineEdit(WebScanGen)
+        self.Word_in.setObjectName("Word_in")
+        self.horizontalLayout_2.addWidget(self.Word_in)
+        self.Word_btn = QtWidgets.QPushButton(WebScanGen)
+        self.Word_btn.setMinimumSize(QtCore.QSize(100, 0))
+        self.Word_btn.setObjectName("Word_btn")
+        self.horizontalLayout_2.addWidget(self.Word_btn)
+        self.verticalLayout.addLayout(self.horizontalLayout_2)
+        
+        
+        
+        self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+        self.CompanyName = QtWidgets.QLabel(WebScanGen)
+        self.CompanyName.setObjectName("CompanyName")
+        self.horizontalLayout_3.addWidget(self.CompanyName)
+        self.CompanyName_in = QtWidgets.QLineEdit(WebScanGen)
+        self.CompanyName_in.setObjectName("CompanyName_in")
+        self.horizontalLayout_3.addWidget(self.CompanyName_in)
+        self.CompanyNameAbbr = QtWidgets.QLabel(WebScanGen)
+        self.CompanyNameAbbr.setObjectName("CompanyNameAbbr")
+        self.horizontalLayout_3.addWidget(self.CompanyNameAbbr)
+        self.CompanyNameAbbr_in = QtWidgets.QLineEdit(WebScanGen)
+        self.CompanyNameAbbr_in.setObjectName("CompanyNameAbbr_in")
+        self.horizontalLayout_3.addWidget(self.CompanyNameAbbr_in)
+        self.verticalLayout.addLayout(self.horizontalLayout_3)
+
+        self.textEdit = QtWidgets.QTextEdit(WebScanGen)
+        self.textEdit.setObjectName("textEdit")
+        self.verticalLayout.addWidget(self.textEdit)
+        self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
+        self.Save = QtWidgets.QLabel(WebScanGen)
+        self.Save.setObjectName("Save")
+        self.horizontalLayout_4.addWidget(self.Save)
+        self.Save_in = QtWidgets.QLineEdit(WebScanGen)
+        self.Save_in.setObjectName("Save_in")
+        self.horizontalLayout_4.addWidget(self.Save_in)
+        # self.Savefile = QtWidgets.QLabel(WebScanGen)
+        # self.Savefile.setObjectName("Savefile")
+        # self.horizontalLayout_4.addWidget(self.Savefile)
+        # self.Savefile_in = QtWidgets.QLineEdit(WebScanGen)
+        # self.Savefile_in.setMaximumSize(QtCore.QSize(100, 16777215))
+        # self.Savefile_in.setObjectName("Savefile_in")
+        # self.horizontalLayout_4.addWidget(self.Savefile_in)
+        self.Save_btn = QtWidgets.QPushButton(WebScanGen)
+        self.Save_btn.setMinimumSize(QtCore.QSize(100, 0))
+        self.Save_btn.setObjectName("Save_btn")
+        self.horizontalLayout_4.addWidget(self.Save_btn)
+        self.verticalLayout.addLayout(self.horizontalLayout_4)
+        self.horizontalLayout_6 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_6.setObjectName("horizontalLayout_6")
+        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_6.addItem(spacerItem)
+        # self.ch_radio = QtWidgets.QRadioButton(WebScanGen)
+        # self.ch_radio.setObjectName("ch_radio")
+        # self.ch_radio.setChecked(True)
+        # self.horizontalLayout_6.addWidget(self.ch_radio)
+        # self.en_radio = QtWidgets.QRadioButton(WebScanGen)
+        # self.en_radio.setObjectName("en_radio")
+        # self.horizontalLayout_6.addWidget(self.en_radio)
+        
+            
+        self.chk_openfinished = QCheckBox("生成報告後自動開啟")
+        self.chk_openfinished.stateChanged.connect(self.on_auto_open)
+        self.horizontalLayout_6.addWidget(self.chk_openfinished)
+        
+        self.Clear_btn = QtWidgets.QPushButton(WebScanGen)
+        self.Clear_btn.setMinimumSize(QtCore.QSize(100, 0))
+        self.Clear_btn.setMaximumSize(QtCore.QSize(100, 16777215))
+        self.Clear_btn.setObjectName("Clear_btn")
+        self.horizontalLayout_6.addWidget(self.Clear_btn)
+        self.btn_option = QtWidgets.QPushButton('選項')
+        self.btn_option.clicked.connect(self.show_option)
+        self.btn_option.setObjectName("Option_btn")
+        self.horizontalLayout_6.addWidget(self.btn_option)
+        self.Excute_btn = QtWidgets.QPushButton(WebScanGen)
+        self.Excute_btn.setMinimumSize(QtCore.QSize(100, 0))
+        self.Excute_btn.setObjectName("Excute_btn")
+        self.horizontalLayout_6.addWidget(self.Excute_btn)
+        self.verticalLayout.addLayout(self.horizontalLayout_6)
+  
+    def show_option(self):
+        self.window_option.show()
+        self.window_option.load_options()
+    def on_auto_open(self, signal):
+        self.auto_open = True if signal > 0 else False 
+class MainWindow(QMainWindow, Ui_WebScanGen):
+    def __init__(self, parent=None):
+        super(MainWindow, self).__init__(parent)
+        central_widget = QWidget()
+        self.setCentralWidget(central_widget) # new central widget    
+        self.setupUi(central_widget)
+if __name__ =='__main__':
+    app = QApplication(sys.argv)
+    window = MainWindow()
+    
+    window.show()
+    sys.exit(app.exec_())
